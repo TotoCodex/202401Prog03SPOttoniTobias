@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+    
+</head>
+<style>
+  tr[id='fila-read']{
+    cursor:pointer;
+  }
+</style>
+<body>
+  
+    <div id="Formulario" style="display: none;">
+    
+        <h2>
+           Formulario Lista
+        </h2>
+    
+    
+
+    <table id ="data-Table" border="2">
+      <thead >
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Fecha de Nacimiento</th>
+          <th>DNI</th>
+          <th>Pais de Origen</th>
+          <th>Modificar</th>
+          <th>Eliminar</th>
+      </tr>
+    </thead>
+    <tbody id ="data-output">
+
+    </tbody>
+    </table>
+    <form>
+      <button id="Agregar" type="button">Agregar</button>
+      
+  </form>
+  </div>
+  
+  <div id="Formulario2" style="display: none;">
+    <h2>
+        Formulario ABM
+    </h2>
+    
+      <form>
+        Id:<input id="ABMID"readonly>
+    </form>
+    <form>
+        Nombre:<input id="ABMNombre">
+    </form>
+    <form>
+        Apellido:<input id="ABMApellido">
+    </form>
+    <form>
+      Fecha de Nacimiento:<input id="ABMFechadeNacimiento" type="number">
+    </form>
+    <form>
+          Tipo:
+          <select id = "filter-select1">
+            <option id="Vacio">-</option>  
+            <option id="Ciudadano-Select">Ciudadano</option>
+              <option id="Extranjero-Select">Extranjero</option>
+          </select>
+    </form>
+    <div id="AtributosCiudadanos" style="display: none;">
+        <form>
+          DNI:<input id="ABMDNI" type="number">
+      </form>
+      
+    </div>
+    <div id="AtributosExtranjeros" style="display: none;">
+      <form>
+          Pais de Origen:<input id="ABMPaisdeOrigen" >
+      </form>
+      
+    </div>
+    
+    <form>
+        <button id="Aceptar" type="button" style="display: inline;">Aceptar</button> <button id="Cancelar"type="button"> Cancelar</button>
+    </form>
+    
+    
+    
+    
+</div>
+</div> 
+ 
+  <script src="Personas.js"></script>
+  
+    
+</body>
+</html>
